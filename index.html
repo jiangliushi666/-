@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红谷滩墨舆查工作室 - 专业舆情分析与商业智能</title>
+    <meta name="description" content="红谷滩墨舆查工作室提供专业的网络舆情监测、数据分析、品牌声誉管理和商业智能解决方案，助您精准把握市场脉搏。">
+    <meta name="keywords" content="红谷滩墨舆查工作室, 舆情监测, 数据分析, 品牌管理, 商业智能, 南昌, 红谷滩">
+    <meta name="author" content="红谷滩墨舆查工作室">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes slide-in-up {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .animate-slide-in-up {
+            animation: slide-in-up 0.8s ease-out forwards;
+        }
+        .scroll-animation {
+            opacity: 0;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .scroll-animation.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .scroll-animation.slide-up {
+            transform: translateY(40px);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-gray-300 font-sans">
+
+    <!-- Header -->
+    <header class="bg-slate-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-white tracking-wider">
+                <a href="#" class="hover:text-cyan-400 transition-colors">红谷滩墨舆查工作室</a>
+            </h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">关于我们</a>
+                <a href="#services" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">服务内容</a>
+                <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">联系我们</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-300 hover:text-cyan-400 transition-colors">关于我们</a>
+            <a href="#services" class="block py-2 text-gray-300 hover:text-cyan-400 transition-colors">服务内容</a>
+            <a href="#contact" class="block py-2 text-gray-300 hover:text-cyan-400 transition-colors">联系我们</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-20">
+        <section class="relative h-screen flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 bg-slate-900 opacity-50"></div>
+            <div class="absolute inset-0 z-0">
+                 <div class="absolute top-0 left-0 w-72 h-72 bg-cyan-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
+                 <div class="absolute bottom-0 right-0 w-72 h-72 bg-purple-500/20 rounded-full filter blur-3xl opacity-50 animate-pulse animation-delay-2000"></div>
+            </div>
+            <div class="relative z-10 p-6">
+                <h2 class="text-5xl md:text-7xl font-extrabold text-white mb-4 animate-slide-in-up" style="animation-delay: 0.2s;">洞察数据，驱动决策</h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto animate-slide-in-up" style="animation-delay: 0.4s;">我们是红谷滩墨舆查工作室，致力于为您提供最精准的网络舆情分析与商业智能服务。</p>
+                <a href="#contact" class="mt-8 inline-block bg-cyan-500 text-white font-bold py-3 px-8 rounded-full hover:bg-cyan-600 transform hover:scale-105 transition-all duration-300 animate-slide-in-up" style="animation-delay: 0.6s;">立即咨询</a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-slate-800/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 scroll-animation slide-up">
+                    <h3 class="text-4xl font-bold text-white">关于我们</h3>
+                    <p class="text-cyan-400 mt-2">专业团队，精准洞察</p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 scroll-animation slide-up">
+                        <div class="bg-slate-700 p-8 rounded-lg shadow-2xl">
+                            <h4 class="text-2xl font-semibold text-white mb-4">我们的使命</h4>
+                            <p class="text-gray-400 leading-relaxed">在信息爆炸的时代，我们坚信数据是企业最宝贵的资产。红谷滩墨舆查工作室的使命，就是利用前沿的技术和专业的分析能力，将纷繁复杂的数据转化为清晰、可执行的商业洞察，帮助客户在激烈的市场竞争中抢占先机。</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 scroll-animation slide-up" style="transition-delay: 0.2s;">
+                         <div class="bg-slate-700 p-8 rounded-lg shadow-2xl">
+                            <h4 class="text-2xl font-semibold text-white mb-4">我们的愿景</h4>
+                            <p class="text-gray-400 leading-relaxed">我们致力于成为江西乃至全国领先的舆情监测与商业智能服务机构。通过不断创新和优化服务，我们希望成为每个企业信赖的数据大脑，共同成长，共创未来。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 scroll-animation slide-up">
+                    <h3 class="text-4xl font-bold text-white">我们的服务</h3>
+                    <p class="text-cyan-400 mt-2">数据驱动，价值创造</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-slate-800 p-8 rounded-lg shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 scroll-animation slide-up">
+                        <div class="text-cyan-400 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></div>
+                        <h4 class="text-2xl font-bold text-white mb-3">网络舆情监测</h4>
+                        <p class="text-gray-400">7x24小时全网信息监控，及时发现与您相关的品牌、产品或行业动态，防范声誉风险。</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="bg-slate-800 p-8 rounded-lg shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 scroll-animation slide-up" style="transition-delay: 0.1s;">
+                        <div class="text-cyan-400 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg></div>
+                        <h4 class="text-2xl font-bold text-white mb-3">数据分析与报告</h4>
+                        <p class="text-gray-400">深入挖掘数据背后的含义，提供定制化的分析报告，为您的战略决策提供坚实的数据支持。</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="bg-slate-800 p-8 rounded-lg shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 scroll-animation slide-up" style="transition-delay: 0.2s;">
+                        <div class="text-cyan-400 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-2.236 9.168-5.518" /></svg></div>
+                        <h4 class="text-2xl font-bold text-white mb-3">品牌声誉管理</h4>
+                        <p class="text-gray-400">结合正面宣传引导与负面信息处理，建立和维护您良好、健康的品牌形象。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-slate-800/50">
+            <div class="container mx-auto px-6 text-center">
+                <div class="scroll-animation slide-up">
+                    <h3 class="text-4xl font-bold text-white">联系我们</h3>
+                    <p class="text-cyan-400 mt-2 mb-8">即刻开启您的数据智能之旅</p>
+                    <p class="text-xl text-gray-300 mb-4">邮箱: <a href="mailto:contact@moyucha.com" class="text-cyan-400 hover:underline">contact@moyucha.com</a></p>
+                    <p class="text-xl text-gray-300">地址: 江西省南昌市红谷滩区</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 红谷滩墨舆查工作室. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu on click
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Scroll Animation
+        const scrollElements = document.querySelectorAll('.scroll-animation');
+
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return (
+                elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend
+            );
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add('is-visible');
+        };
+
+        const hideScrollElement = (element) => {
+            element.classList.remove('is-visible');
+        }
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                }
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+        
+        // Initial check
+        handleScrollAnimation();
+
+    </script>
+
+</body>
+</html>
